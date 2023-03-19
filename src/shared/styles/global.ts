@@ -6,8 +6,11 @@ export const globalStyles = globalCss({
     margin: 0,
     padding: 0,
   },
-  "html, body": {
-    height: "100%",
-    width: "100%",
+
+  body: {
+    fontFamily: "Roboto, sans-serif",
+    backgroundColor: "$gray900",
+    color: "$gray100",
+    "-webkit-font-smoothing": "antialiased",
   },
 });
