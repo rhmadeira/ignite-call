@@ -36,3 +36,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Prisma comandos
+
+Prisma é um ORM, integrado ao typescript
+
+cli do prisma, para usar os comandos no terminal
+
+- npm i prisma -D
+
+Dependência do prisma
+
+- npm @prisma/client
+
+Com ele já instalado para eu iniciar ele eu preciso usar o comando. é criado uma pasta prisma e um arquivo .env
+
+- npx prisma init --datasource-provider SQLite
+
+Após definir o schema.prisma voce roda a migration, voce roda ele apenas em desenvolvimento, ele ler o nosso schema e ver quais alterações tiveram, migration é o histórico
+
+- npx prisma migrate dev
+
+Para que voce possa visualizar as alterações voce pode rodar o prisma studio
+
+- npx prisma studio

@@ -48,6 +48,8 @@ export default function Register() {
       console.log(err?.response?.data?.message);
       alert(err?.response?.data?.message);
     }
+
+    await router.push("/register/connect-calendar");
   }
   return (
     <Container>
